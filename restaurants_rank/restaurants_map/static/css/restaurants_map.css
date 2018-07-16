@@ -1,0 +1,71 @@
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+body {
+  background-color: #171A3D;
+}
+
+.price {
+  font-weight: 300;
+  color: #18C2C0;
+  letter-spacing: 2px;
+  margin-bottom: 5%;
+}
+
+h1 {
+    font-family: 'Nanum Gothic Bold';
+}
+
+
+.info {
+  display: inline-block;
+  max-width: 300px;
+  width: 300px;
+  background-color: transparent;
+  font-family: "Source Code Pro";
+  border: none;
+  outline: none;
+  margin-left: 50px;
+  color: white;
+}
+
+.desc p{
+  font-family: 'Nanum Gothic';
+  text-align: center;
+  color:#878181;
+}
+
+.desc {
+    margin-bottom: 20px;
+}
+
+.button button {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family:'Nanum Gothic Bold';
+  letter-spacing: 1px;
+  width: 300px;
+  background-color: #18C2C0;
+  border: none;
+  color: #fff;
+  padding: 18px;
+  border-radius: 5px;
+  outline: none;
+  transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button button:hover {
+  background-color: #15aeac;
+}
+.button button:active {
+  background-color: #139b99;
+}
+.button button i {
+  font-size: 1.2rem;
+  margin-right: 5px;
+}

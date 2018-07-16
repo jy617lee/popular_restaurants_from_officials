@@ -1,0 +1,34 @@
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+body {
+  background-color: #171A3D;
+}
+
+.price {
+  font-weight: 300;
+  color: #18C2C0;
+  letter-spacing: 2px;
+}
+
+h1 {
+    font-family: 'Nanum Gothic';
+}
+
+.info {
+  display: inline-block;
+  max-width: 300px;
+  width: 300px;
+  background-color: transparent;
+  font-family: "Source Code Pro";
+  border: none;
+  outline: none;
+  margin-left: 50px;
+  color: white;
+}
