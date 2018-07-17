@@ -3,7 +3,7 @@
     <head>
       <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
       <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-      <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/nanumgothic.css">
+      <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/notosanskr.css">
       <link rel="stylesheet" href="{% static 'css/restaurants_map.css' %}">
 
       <title>공무원 맛집 지도</title>
@@ -11,22 +11,31 @@
     <body>
     <div class="container">
       <div class="price">
-          <h1 font>종로구 맛집 지도</h1>
+          <h1>종로구 맛집 지도</h1>
       </div>
 
       <div class="desc">
-        <p>서울시청, 종로구의회, 정부종합청사 등</p>
-        <p>종로구 주요 정부부처에서 지출된 </p>
+        <p>서울시청, 정부종합청사에서 지출된</p>
         <p>업무추진비(판공비)를 분석해</p>
         <p>고위 공무원들이 자주 가는 맛집 지도를</p>
-        <p>이메일로 받아보세요</p>
+        <p>이메일로 보내드립니다</p>
       </div>
 
-      <form method="POST" class="post-form">{% csrf_token %}
-        <div> {{ form.as_p }} </div>
+      <div class="desc">
+        <p>SNS 홍보가 아닌</p>
+        <p>깔끔하고 정갈하고 가격도 적당한</p>
+        <p>진짜 맛집을 찾아보세요!</p>
+      </div>
+
+      <form method="POST" class="button">
+        {% csrf_token %}
+        <div class="email">
+          <input type="email", name="input_email" placeholder="000@gmail.com"/>
+        </div>
         <div class="button">
-            <button type="submit"><i class="ion-locked"></i> Submit Email</button>
-        </div>      </form>
+          <button type="submit"><i class="ion-locked"></i> Submit Email</button>
+        </div>
+      </form>
       <!-- <a class="btn btn-primary" href="/complete_email">입력하기</a> -->
 
     </div>

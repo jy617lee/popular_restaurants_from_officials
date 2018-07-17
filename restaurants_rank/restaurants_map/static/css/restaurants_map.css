@@ -9,23 +9,25 @@
 
 body {
   background-color: #171A3D;
+  font-family: 'Noto Sans KR';
+
 }
 
 .price {
-  font-weight: 300;
-  color: #18C2C0;
   letter-spacing: 2px;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
 }
 
 h1 {
-    font-family: 'Nanum Gothic Bold';
+  font-family: 'Noto Sans KR';
+  font-weight: bold;
+  color: #18C2C0;
 }
 
 
 .info {
   display: inline-block;
-  max-width: 300px;
+  max-width: 260px;
   width: 300px;
   background-color: transparent;
   font-family: "Source Code Pro";
@@ -36,9 +38,21 @@ h1 {
 }
 
 .desc p{
-  font-family: 'Nanum Gothic';
-  text-align: center;
-  color:#878181;
+  width: 260px;
+  font-family: 'Noto Sans KR';
+  text-align: left;
+  color:#aaaaaa;
+  margin-bottom: 3px
+}
+
+.subtitle p{
+  width: 260px;
+  font-family: 'Noto Sans KR';
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: left;
+  color:#bbbbbb;
+  margin-bottom: 20px
 }
 
 .desc {
@@ -48,9 +62,9 @@ h1 {
 .button button {
   font-size: 1.5rem;
   font-weight: 400;
-  font-family:'Nanum Gothic Bold';
+  font-family:'Noto Sans KR';
   letter-spacing: 1px;
-  width: 300px;
+  width: 260px;
   background-color: #18C2C0;
   border: none;
   color: #fff;
@@ -68,4 +82,20 @@ h1 {
 .button button i {
   font-size: 1.2rem;
   margin-right: 5px;
+}
+
+.email input{
+  font-family:'Noto Sans KR';
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  width: 260px;
+  background-color: #656565;
+  border: none;
+  color: #E0E0E0;
+  padding: 18px;
+  border-radius: 5px;
+  outline: none;
+  transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 10px;
 }

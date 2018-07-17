@@ -9,17 +9,20 @@
 
 body {
   background-color: #171A3D;
+  font-family: 'NotoSerifCJK-Black';
 }
 
 .price {
-  font-weight: 300;
+  font-weight: 280;
   color: #18C2C0;
   letter-spacing: 2px;
+  margin-bottom: 3%;
 }
 
 h1 {
-    font-family: 'Nanum Gothic';
+    font-family: 'NotoSansKR-Black';
 }
+
 
 .info {
   display: inline-block;
@@ -31,4 +34,56 @@ h1 {
   outline: none;
   margin-left: 50px;
   color: white;
+}
+
+.desc p{
+  font-family: 'Nanum Gothic';
+  text-align: left;
+  color:#aaaaaa;
+  margin-bottom: 3px
+}
+
+.desc {
+    margin-bottom: 20px;
+}
+
+.button button {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family:'Nanum Gothic Bold';
+  letter-spacing: 1px;
+  width: 250px;
+  background-color: #18C2C0;
+  border: none;
+  color: #fff;
+  padding: 18px;
+  border-radius: 5px;
+  outline: none;
+  transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button button:hover {
+  background-color: #15aeac;
+}
+.button button:active {
+  background-color: #139b99;
+}
+.button button i {
+  font-size: 1.2rem;
+  margin-right: 5px;
+}
+
+.email input{
+  font-family:'Nanum Gothic';
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  width: 250px;
+  background-color: #656565;
+  border: none;
+  color: #E0E0E0;
+  padding: 18px;
+  border-radius: 5px;
+  outline: none;
+  transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 10px;
 }

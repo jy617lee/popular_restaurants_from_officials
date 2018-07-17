@@ -1,13 +1,26 @@
+{% load static %}
 <html>
     <head>
       <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+      <link rel="stylesheet" href="////fonts.googleapis.com/earlyaccess/notosanskr.css">
+      <link rel="stylesheet" href="{% static 'css/restaurants_map.css' %}">
       <title>공무원 맛집 지도</title>
     </head>
     <body>
       <div class="container">
-        <h1>종로구 맛집 지도</h1>
-        <p>감사합니다! 00일 후에 보내드릴게요</p>
+        <div class="price">
+            <h1 font>종로구 맛집 지도</h1>
+        </div>
+        <div class="subtitle">
+          <p>메일링 리스트에 추가되셨습니다.</p>
+        </div>
+        <div class="desc">
+          <p>8월 1일</p>
+          <p>종로구의 공무원들이 가장 자주가는</p>
+          <p>진짜 맛집 지도를 보내드립니다.</p>
+        </div>
       </div>
     </body>
 </html>
