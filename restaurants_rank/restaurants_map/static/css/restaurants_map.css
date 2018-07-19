@@ -13,21 +13,19 @@ body {
 
 }
 
-.price {
-  letter-spacing: 2px;
-  margin-bottom: 3%;
-}
-
-h1 {
+.price p{
+  font-size: 10rem;
+  width: 800px;
   font-family: 'Noto Sans KR';
-  font-weight: bold;
+  text-align: center;
   color: #18C2C0;
+  font-weight: bold;
+  margin-bottom: 100px;
 }
-
 
 .info {
   display: inline-block;
-  max-width: 260px;
+  max-width: 800px;
   width: 300px;
   background-color: transparent;
   font-family: "Source Code Pro";
@@ -38,7 +36,8 @@ h1 {
 }
 
 .desc p{
-  width: 260px;
+  font-size: 5rem;
+  width: 800px;
   font-family: 'Noto Sans KR';
   text-align: left;
   color:#aaaaaa;
@@ -46,9 +45,9 @@ h1 {
 }
 
 .subtitle p{
-  width: 260px;
+  width: 800px;
   font-family: 'Noto Sans KR';
-  font-size: 1.6rem;
+  font-size: 5rem;
   font-weight: bold;
   text-align: left;
   color:#bbbbbb;
@@ -60,11 +59,11 @@ h1 {
 }
 
 .button button {
-  font-size: 1.5rem;
+  font-size: 5rem;
   font-weight: 400;
   font-family:'Noto Sans KR';
   letter-spacing: 1px;
-  width: 260px;
+  width: 800px;
   background-color: #18C2C0;
   border: none;
   color: #fff;
@@ -86,10 +85,10 @@ h1 {
 
 .email input{
   font-family:'Noto Sans KR';
-  font-size: 1.8rem;
+  font-size: 5.1rem;
   font-weight: 400;
   letter-spacing: 1px;
-  width: 260px;
+  width: 800px;
   background-color: #656565;
   border: none;
   color: #E0E0E0;
@@ -97,5 +96,6 @@ h1 {
   border-radius: 5px;
   outline: none;
   transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  margin-bottom: 10px;
+  margin-bottom: 25px;
+  margin-top: 50px;
 }
