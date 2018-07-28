@@ -2,16 +2,16 @@
 업무추진비를 통해 분석한 공무원 맛집리스트!
 
 ## ToDo
-#### Data Analysys
+#### 1. Data Analysys
 - 데이터 정제 : 필요없는 데이터 제외하기, 중복 제거 등
 - 가중치 부여 : 급수/카드사용빈도에 따른 가중치 부여
 - 부서별 특징
 
-#### Web
+#### 2. Web
 - 여러 기준으로 sort
 - Map 기능
 
-#### Backend
+#### 3. Backend
 - pixel, analytics로 user tracking 기능
 - 크롤링 및 데이터 반영 자동화
 
