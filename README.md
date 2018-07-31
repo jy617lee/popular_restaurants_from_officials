@@ -9,10 +9,15 @@
 #### 2. Web
 - 여러 기준으로 sort
 - Map 기능
+- A/B test
 
 #### 3. Backend
-- pixel, analytics로 user tracking 기능
+- FB pixel, GA로 user tracking 기능
 - 크롤링 및 데이터 반영 자동화
+
+#### 4. Busineess
+- FB ad로 타겟 / 니즈 테스트 
+- 유저 타겟 세분화
 
 ## Done
 - 서울시 업무추진비 크롤링
