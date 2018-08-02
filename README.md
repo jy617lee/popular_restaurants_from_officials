@@ -3,17 +3,21 @@
 
 ## ToDo
 #### 1. Data Analysys
-- 데이터 정제 : 필요없는 데이터 제외하기, 중복 제거 등
 - 가중치 부여 : 급수/카드사용빈도에 따른 가중치 부여
-- 부서별 특징
+- 서울시 전 부서 데이터
 
 #### 2. Web
 - 여러 기준으로 sort
 - Map 기능
+- A/B test
 
 #### 3. Backend
-- pixel, analytics로 user tracking 기능
+- FB pixel, GA로 user tracking 기능
 - 크롤링 및 데이터 반영 자동화
+
+#### 4. Busineess
+- FB ad로 타겟 / 니즈 테스트 
+- 유저 타겟 세분화
 
 ## Done
 - 서울시 업무추진비 크롤링
@@ -21,3 +25,7 @@
     - 상위 집행부서 column 추가
     - 장소/주소 column 분리
     - 방문시간을 년/월/일/시간으로 
+- 2차 Tidy 작업 완료
+    - 프랜차이즈 제외
+    - 카페/커피/매점 등 키워드 제거
+    - 부서별 특징 파악
