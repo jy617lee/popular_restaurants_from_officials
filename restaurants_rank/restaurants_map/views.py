@@ -16,3 +16,6 @@ def input_email(request):
     else:
         form = EmailForm()
         return render(request, 'restaurants_map/input_email.html', {'form': form})
+
+def dining_list(request):
+    return render(request, 'restaurants_map/dining_list.html', {})
