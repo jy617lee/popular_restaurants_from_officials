@@ -26,9 +26,10 @@ SECRET_KEY = 'h8)e)4j3a4yhi*9mpbh%+u$7zhgoy=r+^$f(a=%dk-&2np8$(l'
 DEBUG = True
 
 ALLOWED_HOSTS = [
+    '127.0.0.1',
     'localhost',
     '.ap-northeast-2.compute.amazonaws.com',
-    'http://13.209.26.216'
+    'http://13.209.26.216',
 ]
 
 
