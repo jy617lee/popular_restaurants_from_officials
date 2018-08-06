@@ -1,7 +1,11 @@
+
 {% load static %}
 <html>
     <head>
-
+      <meta property="og:title" content="공무원피셜 존맛탱 맛집" />
+      <meta property="og:image" content="{% static 'image/icon.png' %}" />
+      <meta property="og:description" content="가성비갑! 공무원만 알고있는 비밀의 맛집리스트" />
+      <meta property="og:type" content="website" />
       <!-- Global site tag (gtag.js) - Google Analytics -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123289484-1"></script>
       <script>
@@ -16,7 +20,7 @@
       <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
       <link rel="stylesheet" href="////fonts.googleapis.com/earlyaccess/notosanskr.css">
       <link rel="stylesheet" href="{% static 'css/restaurants_map.css' %}">
-      <title>공무원 법카 맛집</title>
+      <title>공무원피셜 존맛탱 맛집</title>
       <style>
       .zui-table {
           border: solid 1px #DDEEEE;
@@ -29,8 +33,8 @@
           width: 150px;
           text-align: center;
           font-family: 'Noto Sans KR';
-          background-color: #DDEFEF;
-          border: solid 1px #DDEEEE;
+          background-color: #171a3d;;
+          border: solid 1px #171a3d;;
           color: #336B6B;
           padding: 10px;
           text-align: left;
@@ -42,8 +46,8 @@
           width: 500px;
           font-family: 'Noto Sans KR';
           background-color: #DDEFEF;
-          border: solid 1px #DDEEEE;
-          color: #336B6B;
+          border: solid 1px #171a3d;
+          color: #171a3d;
           padding: 10px;
           text-align: left;
           text-shadow: 1px 1px 1px #fff;
@@ -51,27 +55,35 @@
       .zui-table tbody td {
         font-size: 4rem;
         font-family: 'Noto Sans KR';
-          border: solid 1px #DDEEEE;
+          border: solid 1px #171a3d;
           color: #333;
           padding: 10px;
           text-shadow: 1px 1px 1px #fff;
       }
 
-      .num {
+      .zui-table .num {
             width: 150px;
-            text-align: center;
+            margin-left: 10px;
+            padding-left: 30px;
       }
 
       .dining {
         width: 350px;
         font-weight: bold;
+        color: #171a3d;
       }
+
+      .kind {
+      	width:250px;
+        color: #171a3d;
+	}
 
       .top10 {
         font-size: 6rem;
         width: 600px;
         margin-bottom: 20px;
-        margin-top: 50px;
+        margin-top: 80px;
+        color: #18C2C0;
       }
 
       p{
@@ -83,9 +95,10 @@
 
       .zui-table-rounded {
           border: none;
+	margin-bottom: 45px;
       }
       .zui-table-rounded thead th {
-          background-color: #CFAD70;
+          background-color: #92d1cb;
           border: none;
           text-shadow: 1px 1px 1px #ccc;
           color: #333;
@@ -98,8 +111,8 @@
       }
       .zui-table-rounded tbody td {
           border: none;
-          border-top: solid 1px #957030;
-          background-color: #EED592;
+          border-top: solid 1px #171a3d;
+          background-color: #eafcf9;
       }
       .zui-table-rounded tbody tr:last-child td:first-child {
           border-radius: 0 0 0 10px;
@@ -107,15 +120,44 @@
       .zui-table-rounded tbody tr:last-child td:last-child {
           border-radius: 0 0 10px 0;
       }
+	.container {
+ 		 align-items: center;
+	}
+
+	body {
+		height:100%;
+		background-position:center;
+		  background-color: #171A3D;
+		 overflow:scroll;
+	}
+	html {
+		height:100%;
+	}
+	.title p{
+    font-weight: bold;
+    font-size: 10rem;
+    width: 800px;
+    font-family: 'Noto Sans KR';
+    text-align: center;
+    color: #18C2C0;
+    margin-top:1000px;
+    margin-bottom:20px;
+	}
+
+  .desc p{
+    margin-top:0px;
+    margin-bottom: 0px;
+    text-align: center;
+  }
 </style>
     </head>
     <body>
       <div class="container">
-        <div class="price">
-            <p>공무원 법카 맛집</p>
+        <div class="title">
+            <p>공무원피셜 JMT</p>
         </div>
         <div class="desc">
-          <p>서울시 고위 공무원들의 법카내역</p>
+          <p>서울시 고위 공무원들의 법카 사용내역</p>
           <p>21,260건을 분석한 맛집 리스트!</p>
         </div>
 
@@ -125,59 +167,59 @@
             <tr>
                 <th class="num">순위</th>
                 <th class="dining">식당</th>
-                <th>종류</th>
+                <th class="kind">종류</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td class="num">1</td>
                 <td class="dining">참숯골</td>
-                <td>소고기</td>
+                <td class="kind">소고기</td>
             </tr>
             <tr>
                 <td class="num">2</td>
                 <td class="dining">우도일식</td>
-                <td>일식</td>
+                <td  class="kind">일식</td>
             </tr>
             <tr>
                 <td class="num">3</td>
                 <td class="dining">구이구이</td>
-                <td>생선구이</td>
+                <td class="kind">생선구이</td>
             </tr>
             <tr>
                 <td class="num">4</td>
                 <td class="dining">곰국시집</td>
-                <td>수육, 전골국수</td>
+                <td class="kind">전골국수</td>
             </tr>
             <tr>
                 <td class="num">5</td>
                 <td class="dining">동해일식</td>
-                <td>일식</td>
+                <td class="kind">일식</td>
             </tr>
             <tr>
                 <td class="num">6</td>
                 <td class="dining">소호정 무교점</td>
-                <td>안동국수</td>
+                <td class="kind">안동국수</td>
             </tr>
             <tr>
                 <td class="num">7</td>
                 <td class="dining">바닷가작은부엌</td>
-                <td>세꼬시</td>
+                <td class="kind">세꼬시</td>
             </tr>
             <tr>
                 <td class="num">8</td>
                 <td class="dining">동원참치</td>
-                <td>일식</td>
+                <td class="kind">일식</td>
             </tr>
             <tr>
                 <td class="num">9</td>
                 <td class="dining">오리마당</td>
-                <td>오리고기</td>
+                <td class="kind">오리고기</td>
             </tr>
             <tr>
                 <td class="num">10</td>
                 <td class="dining">창고 43</td>
-                <td>소고기</td>
+                <td class="kind">소고기</td>
             </tr>
         </tbody>
       </table>
@@ -188,59 +230,59 @@
             <tr>
                 <th class="num">순위</th>
                 <th class="dining">식당</th>
-                <th>종류</th>
+                <th class="kind">종류</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td class="num">1</td>
                 <td class="dining">우도일식</td>
-                <td>일식</td>
+                <td class="kind">일식</td>
             </tr>
             <tr>
                 <td class="num">2</td>
                 <td class="dining">참숯골</td>
-                <td>소고기</td>
+                <td class="kind">소고기</td>
             </tr>
             <tr>
                 <td class="num">3</td>
                 <td class="dining">동해일식</td>
-                <td>일식</td>
+                <td class="kind">일식</td>
             </tr>
             <tr>
                 <td class="num">4</td>
                 <td class="dining">곰국시집</td>
-                <td>수육, 전골국수</td>
+                <td class="kind"> 전골국수</td>
             </tr>
             <tr>
                 <td class="num">5</td>
                 <td class="dining">구이구이</td>
-                <td>생선구이</td>
+                <td class="kind">생선구이</td>
             </tr>
             <tr>
                 <td class="num">6</td>
                 <td class="dining">삼우정</td>
-                <td>불고기</td>
+                <td class="kind">불고기</td>
             </tr>
             <tr>
                 <td class="num">7</td>
                 <td class="dining">만복림</td>
-                <td>중식</td>
+                <td class="kind">중식</td>
             </tr>
             <tr>
                 <td class="num">8</td>
                 <td class="dining">바닷가작은부엌</td>
-                <td>세꼬시</td>
+                <td class="kind">세꼬시</td>
             </tr>
             <tr>
                 <td class="num">9</td>
                 <td class="dining">더미</td>
-                <td>소고기</td>
+                <td class="kind">소고기</td>
             </tr>
             <tr>
                 <td class="num">10</td>
                 <td class="dining">라칸티나</td>
-                <td>이탈리안</td>
+                <td class="kind">이탈리안</td>
             </tr>
         </tbody>
       </table>
