@@ -1,26 +1,221 @@
-h1 {
-    color: #555555;
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  height: 100%
 }
 
-.input100 {
-    font-size: 15px;
-    line-height: 1.5;
-    color: #666666;
-    display: block;
-    width: 100%;
-    background: #e6e6e6;
-    height: 50px;
-    border-radius: 25px;
-    padding: 0 30px 0 68px;
-  }
+body {
+  height:100%;
+  background-position:center;
+    background-color: #171A3D;
+   overflow:scroll;
+}
 
-.login100-form-title {
-    font-family: Poppins-Bold;
-    font-size: 24px;
-    color: #333333;
-    line-height: 1.2;
+html {
+  height:100%;
+}
+
+.price p{
+  font-size: 10rem;
+  width: 800px;
+  font-family: 'Noto Sans KR';
+  text-align: center;
+  color: #18C2C0;
+  font-weight: bold;
+}
+
+.info {
+  display: inline-block;
+  max-width: 800px;
+  width: 300px;
+  background-color: transparent;
+  font-family: "Source Code Pro";
+  border: none;
+  outline: none;
+  margin-left: 50px;
+  color: white;
+}
+
+.desc p{
+  font-size: 5rem;
+  width: 800px;
+  font-family: 'Noto Sans KR';
+  color:#aaaaaa;
+  margin-top:0px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.subtitle p{
+  width: 800px;
+  font-family: 'Noto Sans KR';
+  font-size: 5rem;
+  font-weight: bold;
+  text-align: left;
+  color:#bbbbbb;
+  margin-bottom: 20px
+}
+
+.title p{
+  font-weight: bold;
+  font-size: 10rem;
+  width: 800px;
+  font-family: 'Noto Sans KR';
+  text-align: center;
+  color: #18C2C0;
+  margin-top:1000px;
+  margin-bottom:20px;
+}
+
+.desc {
+    margin-bottom: 20px;
+}
+
+p{
+  font-family: 'Noto Sans KR';
+  font-size: 4rem;
+  text-align: center;
+  color: #ffffff
+}
+
+.button button {
+  font-size: 5rem;
+  font-weight: 400;
+  font-family:'Noto Sans KR';
+  letter-spacing: 1px;
+  width: 800px;
+  background-color: #18C2C0;
+  border: none;
+  color: #fff;
+  padding: 18px;
+  border-radius: 5px;
+  outline: none;
+  transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button button:hover {
+  background-color: #15aeac;
+}
+.button button:active {
+  background-color: #139b99;
+}
+.button button i {
+  font-size: 1.2rem;
+  margin-right: 5px;
+}
+
+.email input{
+  font-family:'Noto Sans KR';
+  font-size: 5.1rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  width: 800px;
+  background-color: #656565;
+  border: none;
+  color: #E0E0E0;
+  padding: 18px;
+  border-radius: 5px;
+  outline: none;
+  transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 25px;
+  margin-top: 50px;
+}
+
+.zui-table {
+    border: solid 1px #DDEEEE;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font: normal 13px Arial, sans-serif;
+}
+
+.zui-table thead th {
+    font-size: 4rem;
+    width: 150px;
     text-align: center;
-    width: 100%;
-    display: block;
-    padding-bottom: 54px;
-  }
+    font-family: 'Noto Sans KR';
+    background-color: #171a3d;
+    border: solid 1px #171a3d;
+    color: #336B6B;
+    padding: 10px;
+    text-align: left;
+    text-shadow: 1px 1px 1px #fff;
+}
+
+.zui-table .dining thead th {
+    font-size: 4rem;
+    width: 500px;
+    font-family: 'Noto Sans KR';
+    background-color: #DDEFEF;
+    border: solid 1px #171a3d;
+    color: #171a3d;
+    padding: 10px;
+    text-align: left;
+    text-shadow: 1px 1px 1px #fff;
+}
+
+.zui-table tbody td {
+  font-size: 4rem;
+  font-family: 'Noto Sans KR';
+    border: solid 1px #171a3d;
+    color: #333;
+    padding: 10px;
+    text-shadow: 1px 1px 1px #fff;
+}
+
+.zui-table-rounded {
+    border: none;
+margin-bottom: 45px;
+}
+
+.zui-table-rounded thead th {
+    background-color: #92d1cb;
+    border: none;
+    text-shadow: 1px 1px 1px #ccc;
+    color: #333;
+}
+.zui-table-rounded thead th:first-child {
+    border-radius: 10px 0 0 0;
+}
+.zui-table-rounded thead th:last-child {
+    border-radius: 0 10px 0 0;
+}
+.zui-table-rounded tbody td {
+    border: none;
+    border-top: solid 1px #171a3d;
+    background-color: #eafcf9;
+}
+.zui-table-rounded tbody tr:last-child td:first-child {
+    border-radius: 0 0 0 10px;
+}
+.zui-table-rounded tbody tr:last-child td:last-child {
+    border-radius: 0 0 10px 0;
+}
+
+.zui-table .num {
+      width: 150px;
+      margin-left: 10px;
+      padding-left: 30px;
+}
+
+.dining {
+  width: 350px;
+  font-weight: bold;
+  color: #171a3d;
+}
+
+.kind {
+  width:250px;
+  color: #171a3d;
+ }
+
+.top10 {
+  font-size: 6rem;
+  width: 600px;
+  margin-bottom: 20px;
+  margin-top: 80px;
+  color: #18C2C0;
+}

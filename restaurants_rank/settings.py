@@ -29,7 +29,7 @@ ALLOWED_HOSTS = [
     '127.0.0.1',
     'localhost',
     '.ap-northeast-2.compute.amazonaws.com',
-    '13.209.26.216'
+    'http://13.209.26.216',
 ]
 
 
@@ -125,6 +125,3 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'assets'),  # Here you tell django to look for a folder named 'assets'
-]

@@ -3,14 +3,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
   flex-direction: column;
+  align-items: center;
+  height: 100%
+  overflow:scroll;
 }
 
 body {
-  background-color: #ffffff;
-  font-family: 'Noto Sans KR';
+  height:100%;
+  background-position:center;
+  background-color: #171A3D;
+}
 
+html {
+  height:100%;
 }
 
 .price p{
@@ -20,7 +26,6 @@ body {
   text-align: center;
   color: #18C2C0;
   font-weight: bold;
-  margin-bottom: 100px;
 }
 
 .info {
@@ -39,9 +44,10 @@ body {
   font-size: 5rem;
   width: 800px;
   font-family: 'Noto Sans KR';
-  text-align: left;
   color:#aaaaaa;
-  margin-bottom: 3px
+  margin-top:0px;
+  margin-bottom: 0px;
+  text-align: center;
 }
 
 .subtitle p{
@@ -54,8 +60,25 @@ body {
   margin-bottom: 20px
 }
 
+.title p{
+  font-weight: bold;
+  font-size: 10rem;
+  width: 800px;
+  font-family: 'Noto Sans KR';
+  text-align: center;
+  color: #18C2C0;
+  margin-bottom:20px;
+}
+
 .desc {
     margin-bottom: 20px;
+}
+
+p{
+  font-family: 'Noto Sans KR';
+  font-size: 4rem;
+  text-align: center;
+  color: #ffffff
 }
 
 .button button {
@@ -99,31 +122,55 @@ body {
   margin-bottom: 25px;
   margin-top: 50px;
 }
+
 .zui-table {
     border: solid 1px #DDEEEE;
     border-collapse: collapse;
     border-spacing: 0;
     font: normal 13px Arial, sans-serif;
 }
+
 .zui-table thead th {
-    background-color: #DDEFEF;
-    border: solid 1px #DDEEEE;
+    font-size: 4rem;
+    width: 150px;
+    text-align: center;
+    font-family: 'Noto Sans KR';
+    background-color: #171a3d;
+    border: solid 1px #171a3d;
     color: #336B6B;
     padding: 10px;
     text-align: left;
     text-shadow: 1px 1px 1px #fff;
 }
+
+.zui-table .dining thead th {
+    font-size: 4rem;
+    width: 500px;
+    font-family: 'Noto Sans KR';
+    background-color: #DDEFEF;
+    border: solid 1px #171a3d;
+    color: #171a3d;
+    padding: 10px;
+    text-align: left;
+    text-shadow: 1px 1px 1px #fff;
+}
+
 .zui-table tbody td {
-    border: solid 1px #DDEEEE;
+  font-size: 4rem;
+  font-family: 'Noto Sans KR';
+    border: solid 1px #171a3d;
     color: #333;
     padding: 10px;
     text-shadow: 1px 1px 1px #fff;
 }
+
 .zui-table-rounded {
     border: none;
+margin-bottom: 45px;
 }
+
 .zui-table-rounded thead th {
-    background-color: #CFAD70;
+    background-color: #92d1cb;
     border: none;
     text-shadow: 1px 1px 1px #ccc;
     color: #333;
@@ -136,12 +183,37 @@ body {
 }
 .zui-table-rounded tbody td {
     border: none;
-    border-top: solid 1px #957030;
-    background-color: #EED592;
+    border-top: solid 1px #171a3d;
+    background-color: #eafcf9;
 }
 .zui-table-rounded tbody tr:last-child td:first-child {
     border-radius: 0 0 0 10px;
 }
 .zui-table-rounded tbody tr:last-child td:last-child {
     border-radius: 0 0 10px 0;
+}
+
+.zui-table .num {
+      width: 150px;
+      margin-left: 10px;
+      padding-left: 30px;
+}
+
+.dining {
+  width: 350px;
+  font-weight: bold;
+  color: #171a3d;
+}
+
+.kind {
+  width:250px;
+  color: #171a3d;
+ }
+
+.top10 {
+  font-size: 6rem;
+  width: 600px;
+  margin-bottom: 20px;
+  margin-top: 80px;
+  color: #18C2C0;
 }
