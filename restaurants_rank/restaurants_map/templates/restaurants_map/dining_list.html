@@ -12,7 +12,6 @@
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-
           gtag('config', 'UA-123289484-1');
       </script>
 
@@ -21,140 +20,7 @@
       <link rel="stylesheet" href="////fonts.googleapis.com/earlyaccess/notosanskr.css">
       <link rel="stylesheet" href="{% static 'css/restaurants_map.css' %}">
       <title>공무원피셜 존맛탱 맛집</title>
-      <style>
-      .zui-table {
-          border: solid 1px #DDEEEE;
-          border-collapse: collapse;
-          border-spacing: 0;
-          font: normal 13px Arial, sans-serif;
-      }
-      .zui-table thead th {
-          font-size: 4rem;
-          width: 150px;
-          text-align: center;
-          font-family: 'Noto Sans KR';
-<<<<<<< HEAD
-          background-color: #171a3d;
-          border: solid 1px #171a3d;
-=======
-          background-color: #171a3d;;
-          border: solid 1px #171a3d;;
->>>>>>> ef01ba25837dbb416f46d4361767d3ce44f6ea92
-          color: #336B6B;
-          padding: 10px;
-          text-align: left;
-          text-shadow: 1px 1px 1px #fff;
-      }
 
-      .zui-table .dining thead th {
-          font-size: 4rem;
-          width: 500px;
-          font-family: 'Noto Sans KR';
-          background-color: #DDEFEF;
-          border: solid 1px #171a3d;
-          color: #171a3d;
-          padding: 10px;
-          text-align: left;
-          text-shadow: 1px 1px 1px #fff;
-      }
-      .zui-table tbody td {
-        font-size: 4rem;
-        font-family: 'Noto Sans KR';
-          border: solid 1px #171a3d;
-          color: #333;
-          padding: 10px;
-          text-shadow: 1px 1px 1px #fff;
-      }
-
-      .zui-table .num {
-            width: 150px;
-            margin-left: 10px;
-            padding-left: 30px;
-      }
-
-      .dining {
-        width: 350px;
-        font-weight: bold;
-        color: #171a3d;
-      }
-
-      .kind {
-      	width:250px;
-        color: #171a3d;
-	}
-
-      .top10 {
-        font-size: 6rem;
-        width: 600px;
-        margin-bottom: 20px;
-        margin-top: 80px;
-        color: #18C2C0;
-      }
-
-      p{
-        font-family: 'Noto Sans KR';
-        font-size: 4rem;
-        text-align: center;
-        color: #ffffff
-      }
-
-      .zui-table-rounded {
-          border: none;
-	margin-bottom: 45px;
-      }
-      .zui-table-rounded thead th {
-          background-color: #92d1cb;
-          border: none;
-          text-shadow: 1px 1px 1px #ccc;
-          color: #333;
-      }
-      .zui-table-rounded thead th:first-child {
-          border-radius: 10px 0 0 0;
-      }
-      .zui-table-rounded thead th:last-child {
-          border-radius: 0 10px 0 0;
-      }
-      .zui-table-rounded tbody td {
-          border: none;
-          border-top: solid 1px #171a3d;
-          background-color: #eafcf9;
-      }
-      .zui-table-rounded tbody tr:last-child td:first-child {
-          border-radius: 0 0 0 10px;
-      }
-      .zui-table-rounded tbody tr:last-child td:last-child {
-          border-radius: 0 0 10px 0;
-      }
-	.container {
- 		 align-items: center;
-	}
-
-	body {
-		height:100%;
-		background-position:center;
-		  background-color: #171A3D;
-		 overflow:scroll;
-	}
-	html {
-		height:100%;
-	}
-	.title p{
-    font-weight: bold;
-    font-size: 10rem;
-    width: 800px;
-    font-family: 'Noto Sans KR';
-    text-align: center;
-    color: #18C2C0;
-    margin-top:1000px;
-    margin-bottom:20px;
-	}
-
-  .desc p{
-    margin-top:0px;
-    margin-bottom: 0px;
-    text-align: center;
-  }
-</style>
     </head>
     <body>
       <div class="container">
@@ -162,132 +28,135 @@
             <p>공무원피셜 JMT</p>
         </div>
         <div class="desc">
-          <p>서울시 고위 공무원들의 법카 사용내역</p>
-          <p>21,260건을 분석한 맛집 리스트!</p>
+          <p>서울시 <span style="color: #ffffff">고위 공무원</span>들의 <span style="color: #ffffff">법카</span> 사용내역</p>
+          <p><span style="color: #ffffff">21,260건</span>을 분석한 진짜 맛집 리스트!</p>
         </div>
-
           <p class="top10">가장 자주 간 맛집</p>
-        <table class="zui-table zui-table-rounded">
+          <table class="zui-table zui-table-rounded">
         <thead>
             <tr>
                 <th class="num">순위</th>
                 <th class="dining">식당</th>
-                <th class="kind">종류</th>
+                <th class="kind">방문횟수</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td class="num">1</td>
-                <td class="dining">참숯골</td>
-                <td class="kind">소고기</td>
+                <td class="dining">우도일식</td>
+                <td class="kind">307회</td>
             </tr>
             <tr>
                 <td class="num">2</td>
-                <td class="dining">우도일식</td>
-                <td  class="kind">일식</td>
+                <td class="dining">참숯골</td>
+                <td class="kind">261회</td>
             </tr>
             <tr>
                 <td class="num">3</td>
                 <td class="dining">구이구이</td>
-                <td class="kind">생선구이</td>
-            </tr>
-            <tr>
-                <td class="num">4</td>
-                <td class="dining">곰국시집</td>
-                <td class="kind">전골국수</td>
-            </tr>
-            <tr>
-                <td class="num">5</td>
-                <td class="dining">동해일식</td>
-                <td class="kind">일식</td>
-            </tr>
-            <tr>
-                <td class="num">6</td>
-                <td class="dining">소호정 무교점</td>
-                <td class="kind">안동국수</td>
-            </tr>
-            <tr>
-                <td class="num">7</td>
-                <td class="dining">바닷가작은부엌</td>
-                <td class="kind">세꼬시</td>
-            </tr>
-            <tr>
-                <td class="num">8</td>
-                <td class="dining">동원참치</td>
-                <td class="kind">일식</td>
-            </tr>
-            <tr>
-                <td class="num">9</td>
-                <td class="dining">오리마당</td>
-                <td class="kind">오리고기</td>
-            </tr>
-            <tr>
-                <td class="num">10</td>
-                <td class="dining">창고 43</td>
-                <td class="kind">소고기</td>
+                <td class="kind">248회</td>
             </tr>
         </tbody>
       </table>
-
-      <p class="top10">가장 돈을 많이 쓴 맛집</p>
-      <table class="zui-table zui-table-rounded">
+          <p class="top10">가장 돈을 많이 쓴 맛집</p>
+          <table class="zui-table zui-table-rounded">
         <thead>
             <tr>
                 <th class="num">순위</th>
                 <th class="dining">식당</th>
-                <th class="kind">종류</th>
+                <th class="kind">집행금액</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td class="num">1</td>
                 <td class="dining">우도일식</td>
-                <td class="kind">일식</td>
+                <td class="kind">4180만원</td>
             </tr>
             <tr>
                 <td class="num">2</td>
                 <td class="dining">참숯골</td>
-                <td class="kind">소고기</td>
+                <td class="kind">3393만원</td>
             </tr>
             <tr>
                 <td class="num">3</td>
                 <td class="dining">동해일식</td>
-                <td class="kind">일식</td>
+                <td class="kind">2945만원</td>
+            </tr>
+        </tbody>
+      </table>
+          <p class="top10">가장 비싸게 먹은 맛집</p>
+          <table class="zui-table zui-table-rounded">
+        <thead>
+            <tr>
+                <th class="num">순위</th>
+                <th class="dining">식당</th>
+                <th class="kind">인당 지출</th>
+                <th class="num">방문 횟수</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="num">1</td>
+                <td class="dining">한미리</td>
+                <td class="kind">26,598원</td>
+                <td class="num">33회</td>
             </tr>
             <tr>
-                <td class="num">4</td>
-                <td class="dining">곰국시집</td>
-                <td class="kind"> 전골국수</td>
+              <td class="num">2</td>
+              <td class="dining">더테이블한정식</td>
+              <td class="kind">26,430원</td>
+              <td class="num">87회</td>
             </tr>
             <tr>
-                <td class="num">5</td>
-                <td class="dining">구이구이</td>
-                <td class="kind">생선구이</td>
+              <td class="num">3</td>
+              <td class="dining">다한우</td>
+              <td class="kind">26,290원</td>
+              <td class="num">49회</td>
             </tr>
             <tr>
-                <td class="num">6</td>
-                <td class="dining">삼우정</td>
-                <td class="kind">불고기</td>
+              <td class="num">...</td>
+              <td class="dining">...</td>
+              <td class="kind">...</td>
+              <td class="num">...</td>
             </tr>
             <tr>
-                <td class="num">7</td>
-                <td class="dining">만복림</td>
-                <td class="kind">중식</td>
+              <td class="num">100</td>
+              <td class="dining">완산골명가</td>
+              <td class="kind">10,513원</td>
+              <td class="num">26회</td>
+            </tr>
+        </tbody>
+      </table>
+          <p class="top10">회식용 맛집</p>
+          <p class="desc">10명 이상의 단체 손님을 데리고 가장 많이 간 식당!</p>
+          <table class="zui-table zui-table-rounded">
+        <thead>
+            <tr>
+                <th class="num">순위</th>
+                <th class="dining">식당</th>
+                <th class="kind">방문 횟수</th>
+                <th class="num">평균 인원</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="num">1</td>
+                <td class="dining">열빈</td>
+                <td class="kind">65회</td>
+                <td class="num">13명</td>
             </tr>
             <tr>
-                <td class="num">8</td>
-                <td class="dining">바닷가작은부엌</td>
-                <td class="kind">세꼬시</td>
+              <td class="num">2</td>
+              <td class="dining">더미</td>
+              <td class="kind">62회</td>
+              <td class="num">12명</td>
             </tr>
             <tr>
-                <td class="num">9</td>
-                <td class="dining">더미</td>
-                <td class="kind">소고기</td>
-            </tr>
-            <tr>
-                <td class="num">10</td>
-                <td class="dining">라칸티나</td>
-                <td class="kind">이탈리안</td>
+              <td class="num">3</td>
+              <td class="dining">송학</td>
+              <td class="kind">30회</td>
+              <td class="num">10명</td>
             </tr>
         </tbody>
       </table>

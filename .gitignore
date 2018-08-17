@@ -1,0 +1,4 @@
+.ipynb_checkpoints/*
+restaurants_rank/static/admin
+PipFile
+PipFile.lock
