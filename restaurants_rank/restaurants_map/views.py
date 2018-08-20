@@ -19,3 +19,6 @@ def input_email(request):
 
 def dining_list(request):
     return render(request, 'restaurants_map/dining_list.html', {})
+
+def official_report(request):
+    return render(request, 'restaurants_map/official_report.html', {})
