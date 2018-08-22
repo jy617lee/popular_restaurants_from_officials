@@ -14,6 +14,16 @@
       font-weight: bold;
       color: red;
     }
+
+    p{
+      color: blue;
+    }
+    h2{
+      margin-top:50px;
+    }
+    h3{
+      margin-top:50px;
+    }
   </style>
 </head>
 <body>
@@ -28,7 +38,7 @@
 
   <p>
     "서울시 공무원 비밀맛집" 프로젝트는
-    서울시 고위공무원(4급 이상)의 업무추진비 내역 3년치, 51456건을 분석하여
+    서울시 고위공무원(4급 이상)의 업무추진비 내역 3년치, 51,456건을 분석하여
     서울시 공무원들이 자주 가는 진짜 맛집을 알아보는 프로젝트입니다.
 
     본 페이지는 각 카테고리별 Top3 식당을 보여주며,
@@ -36,8 +46,9 @@
   </p>
   <h2>카테고리별 맛집</h2>
   <h3>1. 가장 자주 간 식당</h3>
+  <p>'참숯골' 식당이 3년 내내 순위권을 기록했다. 평균 6-7명의 단체 손님을 모시고 자주 가는 것을 알 수 있다. </p>
   <h4>전체 기간(2016년~현재)</h4>
-  <table border="1">
+    <table border="1">
     <thead>
       <tr>
         <th>식당명</th>
@@ -79,9 +90,8 @@
       </tr>
     </tbody>
   </table>
-
   <h4>2016년</h4>
-  <table border="1">
+    <table border="1">
     <thead>
       <tr>
         <th>식당명</th>
@@ -123,9 +133,8 @@
       </tr>
     </tbody>
   </table>
-
   <h4>2017년</h4>
-  <table border="1">
+    <table border="1">
     <thead>
       <tr>
         <th>식당명</th>
@@ -167,7 +176,6 @@
       </tr>
     </tbody>
   </table>
-
   <h4>2018년</h4>
     <table border="1">
       <thead>
@@ -213,51 +221,52 @@
   </table>
 
   <h3>2. 가장 돈을 많이 쓴 식당들</h3>
+  <p>2016, 2017년에 사랑받았던 제일가든이 순위권에서 사라지고, 가장 자주 방문했던 참숯골이 이번 카테고리에서도 역시 순위권에 올랐다 </p>
     <h4>전체(2016년~현재)</h4>
-    <table border="1">
-    <thead>
-  <tr>
-    <th>식당명</th>
-    <th>방문횟수</th>
-    <th class=highlight>지불금액</th>
-    <th>총 인원</th>
-    <th>회당지불금액</th>
-    <th>인당지불금액</th>
-    <th>회당명수</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td>참숯골</td>
-    <td>684</td>
-    <td>79914620</td>
-    <td>4653</td>
-    <td>116834</td>
-    <td>17175</td>
-    <td>7</td>
-  </tr>
-  <tr>
-    <td>동해일식</td>
-    <td>377</td>
-    <td>55124400</td>
-    <td>2248</td>
-    <td>146219</td>
-    <td>24522</td>
-    <td>6</td>
-  </tr>
-  <tr>
-    <td>라칸티나</td>
-    <td>271</td>
-    <td>48128400</td>
-    <td>1812</td>
-    <td>177596</td>
-    <td>26561</td>
-    <td>7</td>
-  </tr>
-</tbody>
-</table>
+      <table border="1">
+       <thead>
+        <tr>
+          <th>식당명</th>
+          <th>방문횟수</th>
+          <th class=highlight>지불금액</th>
+          <th>총 인원</th>
+          <th>회당지불금액</th>
+          <th>인당지불금액</th>
+          <th>회당명수</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>참숯골</td>
+          <td>684</td>
+          <td>79914620</td>
+          <td>4653</td>
+          <td>116834</td>
+          <td>17175</td>
+          <td>7</td>
+        </tr>
+        <tr>
+          <td>동해일식</td>
+          <td>377</td>
+          <td>55124400</td>
+          <td>2248</td>
+          <td>146219</td>
+          <td>24522</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>라칸티나</td>
+          <td>271</td>
+          <td>48128400</td>
+          <td>1812</td>
+          <td>177596</td>
+          <td>26561</td>
+          <td>7</td>
+        </tr>
+        </tbody>
+      </table>
     <h4>2016년</h4>
-    <table border="1">
+      <table border="1">
   <thead>
     <tr>
       <th>식당명</th>
@@ -298,7 +307,7 @@
       <td>6</td>
     </tr>
   </tbody>
-</table>
+  </table>
     <h4>2017년</h4>
     <table border="1">
   <thead>
@@ -343,7 +352,7 @@
   </tbody>
 </table>
     <h4>2018년</h4>
-    <table border="1">
+      <table border="1">
   <thead>
     <tr>
       <th>식당명</th>
@@ -387,8 +396,10 @@
 </table>
 
   <h3>3. 한 번에 돈을 많이 쓴 식당들</h3>
+  <p>업무추진비 사용 횟수와 지불금액을 통해 1회당 지불한 금액을 추산하여
+  한 번에 돈을 많이 쓴 식당을 집계했다.  </p>
     <h4>전체(2016년~현재)</h4>
-    <table border="1">
+      <table border="1">
   <thead>
     <tr>
       <th>식당명</th>
@@ -431,7 +442,7 @@
   </tbody>
 </table>
     <h4>2016년</h4>
-    <table border="1">
+      <table border="1">
   <thead>
     <tr>
       <th>식당명</th>
@@ -474,7 +485,7 @@
   </tbody>
 </table>
     <h4>2017년</h4>
-    <table border="1">
+      <table border="1">
   <thead>
     <tr>
       <th>식당명</th>
@@ -517,8 +528,7 @@
   </tbody>
 </table>
     <h4>2018년</h4>
-
-<table border="1">
+      <table border="1">
   <thead>
     <tr>
       <th>식당명</th>
@@ -562,6 +572,9 @@
 </table>
 
   <h3>4. 가장 비싸게 먹은 식당들</h3>
+  <p>업무추진비 사용 시 참가자 명수와 지불금액을 통해 1인당 사용 금액을 추산하였다.
+  김영란법의 영향으로 1인당 지출금액은 2016년 3만원대에서 2017년 2만 7천원대, 2018년 2만 5천원대로
+    점점 감소하는 추세를 보인다. </p>
     <h4>전체(2016년~현재)</h4>
       <table border="1">
         <thead>
@@ -1227,6 +1240,7 @@
     </table>
 
   <h3>3. 가장 비싼 것을 먹는 부서</h3>
+  <p> 행정1부시장과 정무부시장이 3년 연속으로 순위권 내에 들었음을 알 수 있다</p>
     <h4>전체 기간(2016년~현재)</h4>
       <table border="1">
   <thead>
