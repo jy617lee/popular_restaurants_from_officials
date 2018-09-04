@@ -25,3 +25,6 @@ def official_report(request):
 
 def secret_dinings(request):
     return render(request, 'restaurants_map/secret_dinings.html', {})
+
+def category_1_mayor(request):
+    return render(request, 'restaurants_map/category_1_mayor.html', {})

@@ -7,4 +7,5 @@ urlpatterns = [
     url(r'^official_jmt_w$', views.dining_list, name='dining_list'),
     url(r'^official_report$', views.official_report, name='official_report'),
     url(r'^secret_dinings$', views.secret_dinings, name='secret_dinings'),
+    url(r'^category_1_mayor$', views.category_1_mayor, name='category_1_mayor'),
 ]
