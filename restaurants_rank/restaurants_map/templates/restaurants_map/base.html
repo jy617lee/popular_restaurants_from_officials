@@ -1,0 +1,27 @@
+{% load static %}
+<html>
+    <head>
+      <meta property="og:title" content="공무원피셜 존맛탱 맛집" />
+      <meta property="og:image" content="{% static 'image/icon.png' %}" />
+      <meta property="og:description" content="가성비갑! 공무원만 알고있는 비밀의 맛집리스트" />
+      <meta property="og:type" content="website" />
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123289484-1"></script>
+      <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'UA-123289484-1');
+      </script>
+
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+      <link rel="stylesheet" href="////fonts.googleapis.com/earlyaccess/notosanskr.css">
+      <link rel="stylesheet" href="{% static 'css/secret_dinings.css' %}">
+      <title>공무원피셜 존맛탱 맛집</title>
+
+    </head>
+    <body>
+      {% block content %}{% endblock content %}
+    </body>
+</html>
