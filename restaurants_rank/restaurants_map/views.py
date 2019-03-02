@@ -26,5 +26,20 @@ def official_report(request):
 def secret_dinings(request):
     return render(request, 'restaurants_map/secret_dinings.html', {})
 
-def category_1_mayor(request):
-    return render(request, 'restaurants_map/category_1_mayor.html', {})
+def mayor_best(request):
+    return render(request, 'restaurants_map/mayor_best.html', {})
+
+def officials_best(request):
+    return render(request, 'restaurants_map/officials_best.html', {})
+
+def group_best(request):
+    return render(request, 'restaurants_map/group_best.html', {})
+
+def price_best(request):
+    return render(request, 'restaurants_map/price_best.html', {})
+
+def admin_best(request):
+    return render(request, 'restaurants_map/admin_best.html', {})
+
+def spokeman_best(request):
+    return render(request, 'restaurants_map/spokeman_best.html', {})

@@ -1,27 +1,108 @@
 {% load static %}
-<html>
-    <head>
-      <meta property="og:title" content="공무원피셜 존맛탱 맛집" />
-      <meta property="og:image" content="{% static 'image/icon.png' %}" />
-      <meta property="og:description" content="가성비갑! 공무원만 알고있는 비밀의 맛집리스트" />
-      <meta property="og:type" content="website" />
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123289484-1"></script>
-      <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'UA-123289484-1');
-      </script>
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta property="og:title" content="공무원피셜 비밀맛집" />
+  <meta property="og:image" content="{% static 'image/icon.png' %}" />
+  <meta property="og:description" content="가성비갑! 공무원만 알고있는 비밀의 맛집리스트" />
+  <meta property="og:type" content="website" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
 
-      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-      <link rel="stylesheet" href="////fonts.googleapis.com/earlyaccess/notosanskr.css">
-      <link rel="stylesheet" href="{% static 'css/secret_dinings.css' %}">
-      <title>공무원피셜 존맛탱 맛집</title>
+  <title>JMT</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    </head>
-    <body>
-      {% block content %}{% endblock content %}
-    </body>
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded:400,600,700" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link href="{% static 'js/bootstrap.css' %}" rel="stylesheet">
+  <link href="{% static 'fonts/ionicons.css' %}" rel="stylesheet">
+  <link href="{% static 'css/secret_dining.css' %}" rel="stylesheet">
+  <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+  <script src="{% static 'js/tether.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.js' %}"></script>
+  <script src="{% static 'js/scripts.js' %}"></script>
+</head>
+<!-- Font -->
+      <body>
+        <header>
+          <div class="bg-191">
+            <div class="container">
+              <div class="oflow-hidden color-ash font-9 text-sm-center ptb-sm-5">
+
+                <ul class="float-right float-sm-none list-a-plr-10 list-a-plr-sm-5 list-a-ptb-15 list-a-ptb-sm-5">
+                  <li><a class="pl-0 pl-sm-10" href="#"><i class="ion-social-facebook"></i></a></li>
+                  <li><a href="#"><i class="ion-social-github"></i></a></li>
+                  <li><a href="#"><i class="ion-social-google"></i></a></li>
+                </ul>
+
+              </div><!-- top-menu -->
+            </div><!-- container -->
+          </div><!-- bg-191 -->
+
+          <div class="container">
+            <a class="logo" href="index.html"><img src="{% static 'images/logo-black.png' %}" alt="Logo"></a>
+
+            <a class="menu-nav-icon right-area" data-menu="#main-menu" href="#"><i class="ion-navicon"></i></a>
+
+            <ul class="main-menu" id="main-menu">
+              <li class="drop-down"><a href="{% url 'mayor_best' %}">LIST<i class="ion-arrow-down-b"></i></a>
+                <ul class="drop-down-menu drop-down-inner">
+                  <li><a href="{% url 'mayor_best' %}">서울시장맛집</a></li>
+                  <li><a href="{% url 'officials_best' %}">공무원맛집</a></li>
+                  <li><a href="{% url 'group_best' %}">단체손님맛집</a></li>
+                  <li><a href="{% url 'price_best' %}">가성비맛집</a></li>
+                  <li><a href="{% url 'admin_best' %}">행정국맛집</a></li>
+                  <li><a href="{% url 'spokeman_best' %}">대변인맛집</a></li>
+                </ul>
+              </li>
+              <li><a href="{% url 'official_report' %}">공무원 비밀맛집 프로젝트</a></li>
+            </ul>
+            <div class="clearfix"></div>
+          </div><!-- container -->
+        </header>
+        	<section></section>
+        {% block content %}{% endblock content %}
+        <section>
+          <div class="container">
+              </div><!-- col-md-9 -->
+                </div><!--  pl-20 -->
+              </div><!-- col-md-3 -->
+            </div><!-- row -->
+          </div><!-- container -->
+        </section>
+
+
+        <footer class="bg-191 color-ccc">
+
+          <div class="container">
+            <div class="pt-20 pb-0 pos-relative">
+              <div class="abs-tblr pt-0 z--1 text-center">
+                <div class="h-30 pos-relative"></div>
+              </div>
+              <div class="row">
+
+                <div class="col-sm-12">
+                  <div class="mb-30">
+                    <p class="color-gray" style="font-size:11px;"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ion-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+        </p>
+        <p class="color-gray" style="font-size:11px;">Made by <a href="#" target="_blank">Jiyoon Lee,</a> Design by <a href="#" target="_blank">Chaewon Kang, </a> Marketing by <a href="#" target="_blank">Jiyoung Choi</a>
+      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+      </p>
+                  </div><!-- mb-30 -->
+                </div><!-- col-md-4 -->
+
+              </div><!-- row -->
+            </div><!-- ptb-50 -->
+
+            <div class="brdr-ash-1 opacty-2"></div>
+
+          </div><!-- container -->
+        </footer>
+      </body>
 </html>
